@@ -10,6 +10,10 @@ import (
 	"github.com/spf13/cobra"
 )
 
+func ping (domain string) (int, error) {
+	
+}
+
 var (
 	urlPath string
 )
@@ -21,14 +25,12 @@ var pingCmd = &cobra.Command{
 	Long: ``,
 	Run: func(cmd *cobra.Command, args []string) {
 	
+		//What we want it to do here
 		var client = &http.Client{
 			Transport: &http.Transport {
 				Dial: net.Dialer{timeout: 2 * time.Second}.Dial,
-				
 			}
 		}
-
-
 	},
 }
 
