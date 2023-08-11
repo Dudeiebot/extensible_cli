@@ -13,7 +13,7 @@ var NetCmd = &cobra.Command{ //we make the netCmd Public so we can call it elsew
 	Short: "Calling the Net Command",
 	Long:  ``,
 	Run: func(cmd *cobra.Command, args []string) {
-		cmd.Help()
+		cmd.Help() //send the help message
 	},
 }
 
