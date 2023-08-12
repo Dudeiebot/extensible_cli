@@ -6,6 +6,7 @@ package cmd
 import (
 	"os"
 
+	"github.com/dudeiebot/extensible_cli/cmd/info"
 	"github.com/dudeiebot/extensible_cli/cmd/net"
 	"github.com/spf13/cobra"
 )
@@ -14,12 +15,7 @@ import (
 var rootCmd = &cobra.Command{
 	Use:   "extensible_cli",
 	Short: "A brief description of your application",
-	Long: `A longer description that spans multiple lines and likely contains
-examples and usage of using your application. For example:
-
-Cobra is a CLI library for Go that empowers applications.
-This application is a tool to generate the needed files
-to quickly create a Cobra application.`,
+	Long:  ``,
 	// Uncomment the following line if your bare application
 	// has an action associated with it:
 	// Run: func(cmd *cobra.Command, args []string) { },
@@ -36,6 +32,7 @@ func Execute() {
 
 func subCommandsShii() {
 	rootCmd.AddCommand(net.NetCmd)
+	rootCmd.AddCommand(info.InfoCmd)
 }
 
 func init() {
