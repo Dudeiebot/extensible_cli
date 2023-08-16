@@ -4,8 +4,6 @@ Copyright © 2023 NAME HERE <EMAIL ADDRESS>
 package info
 
 import (
-	"fmt"
-
 	"github.com/spf13/cobra"
 )
 
@@ -15,10 +13,11 @@ var diskCheckCmd = &cobra.Command{
 	Short: "Print memory usage",
 	Long:  ``,
 	Run: func(cmd *cobra.Command, args []string) {
-		fmt.Println("diskCheck called")
-	},
+    cmd.Help()
+  },
 }
 
+  //testing out some shiit here to see how far
 func init() {
 	InfoCmd.AddCommand(diskCheckCmd)
 
