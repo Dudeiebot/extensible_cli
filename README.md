@@ -1,9 +1,9 @@
-Let do an extensible cli into into with my explaination and others here.
+Let do an extensible cli with my explaination and others here.
 
 
 rootCmd.AddCommand(net.NetCmd): we use to add a new command to root when we make the var public
 
-It is just like we create a command first and have subsidiary under it, for instance now we have net the baba with ping as the subsidiary, and net is always public while ping is private and can be called from under it and also we have info and we cna do disk-checking in it
+It is just like we create a command first and have subsidiary under it, for instance now, we have net the dada with ping as the subsidiary, and net is always public while ping is private and can be called from under it and also we have info and we can do disk-checking in it
 
 
 get viper from cobra with (cobra-cli init --viper)
